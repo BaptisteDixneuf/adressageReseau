@@ -1,0 +1,29 @@
+/* 
+DESIGN DU FOOTER
+*/
+
+
+footer{
+width: 80%; /*Largeur de 80% de la page*/
+padding-left: 10%; /* Marge intérieur à gauche de 10% de la largueur de l'écran */
+padding-right: 10%; /* Marge intérieur à droite de 10% de la largueur de l'écran */
+min-height: 70px; /* Hauteur minimun du pied de page */
+background: url('footer.jpg') repeat-x;
+}
+
+footer p{
+text-align: center;
+}
+/*le texte et le lien est en blanc tout le temps*/
+a.pied_de_page {
+color : #374774; /*couleur du lien des mentions légales en blanc*/
+}
+a.pied_de_page a:visited{ 
+color : #374774; /*couleur du lien des mentions légales en blanc lorsqu'il est visité*/
+}
+a.pied_de_page a:hover {
+color : #374774; /*couleur du lien des mentions légales en blanc au survol*/
+}
+p.pied_de_page {/*couleur du texte des mentions légales en blanc */
+color : #374774;
+}

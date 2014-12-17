@@ -1,0 +1,165 @@
+/* 
+DESIGN DU CORPS DE LA PAGE
+*/
+
+/*-------------------------------------------------------
+ Corps de la page
+--------------------------------------------------------*/
+body{
+/*margin-left:10%; Marge de 10% ï¿½ gauche du site */
+/*margin-right:10%;  Marge de 10% ï¿½ droite du site */
+width:100%; /* Le site prend 80% de largueur de la page de la page */
+font-family:Comic sans MS; /* Poloce d'Ã©criture */
+font-size: 15px; /* Taille du texte */
+line-height: 1.4; /* Espace interligne minimun */
+
+}
+
+/*-------------------------------------------------------
+ Corps de la page contenant le cours sur l'adressage rï¿½seau
+--------------------------------------------------------*/
+
+section{
+padding-left: 10%; /* Marge intÃ©rieur Ã  gauche de 10% de la largueur de l'Ã©cran */
+padding-right: 10%; /* Marge intÃ©rieur Ã  droite de 10% de la largueur de l'Ã©cran */
+background-color:#FCF9F0; /*Couleur */
+padding-top: 1%;
+padding-bottom: 1%;
+
+}
+
+article{
+text-align: justify; /* On justifie le texte */
+}
+
+/* Titre h1 dans article */
+article h1{
+	color:#ac1515; /* Couleur du titre */
+	font-size: 1.7em; /* Taille du tite */
+	margin-top:10px; /* Marge en haut */
+}
+
+/* Titre h2 dans article */
+article h2{
+	color:#2f4092;  /* Couleur du titre */
+	font-size: 1.5em;/* Taille du tite */
+	margin-top: 10px; /* Marge en haut */
+	margin-bottom: 10px; /* Marge en bas */
+}
+
+/* Paragraphe de article*/
+article p{
+line-height:1.7 /* Largeur inter-ligne */ 
+}
+
+/* -----Tableaux */
+
+table/* Le tableau en entier */
+{
+ margin-top:10px;
+ margin-bottom:10px;
+}
+
+td /* Toutes les cellules des tableaux... */
+{
+ border: 1px solid black; /* auront une bordure de 1px */
+ padding :5px; /* Marge intÃ©rieur de 2px pour pas que le texte soit collÃ© au texte */
+}
+th /*Titre des colones*/
+{
+    border : 1px solid black; /* auront une bordure de 1px */
+    padding :5px; /* Marge intÃ©rieur de 2px pour pas que le texte soit collÃ© au texte */
+}
+
+aside { /*Les infos complÃ©mentaires*/
+background-color:white; /*Couleur de fond */
+border-style:solid; /* 	lez bordures sont de solides car autremement, il ne s'affiche pas*/
+border-color:#85BDF8; /* Couleur bleu des bordures d'aside */
+border-width:2px; /* Largeur de 2px pour les bordures */
+background-image:url('logo_info.jpg'); /* nOn inclue une image en fond */
+background-repeat: no-repeat;  /* On enlÃ¨ve la rÃ©pÃ©tition */
+background-position: left; /*  On positionne l'image Ã  gauche */
+min-height: 50px; /* Hauteur minimun de PX */
+-webkit-border-radius: 10px; /* on arrondi les bordures */
+-moz-border-radius: 10px; /* on arrondi les bordures */
+border-radius: 10px; /* on arrondi les bordures */
+
+margin-top:20px; /* Marge de 5px en haut au dessus de la bordure du haut */
+margin-bottom:20px; /* Marge de 5px en bas au dessous de la bordure du bas */
+margin-left: -60px; /* Marge -60px pour qu'il sorte du bloc */
+
+padding-left:5%; /* Marge de intÃ©rieur de 5% pour pas que le texte soit sur l'image */
+padding-top: 10px; /* Marge interieur en haut de 10px en haut */
+padding-bottom: 10px; /* Marge interieur en bas de 10px en bas */
+padding-right: 10px;  /* Marge interieur en droite de 10px en bas */
+}
+
+
+/* Bouton "lire la suite */
+.bouton_rouge {
+display: inline-block; /* On enleve le retour Ã  la ligne */
+height: 25px; /* Hauteur de 25px */
+right: 5px;
+bottom: 5px;
+background: url('fond_degraderouge.png') repeat-x; /* Dégradé répété sur toute la largueur du bouton */
+border: 1px solid #760001; /* Bordure de 1px en coleur */
+border-radius: 5px; /* On arrondi les bords */
+font-size: 1.2em; /* Espace interligne */
+text-align: center; /* On centre le texte */
+padding: 3px 8px 0px 8px; /* Marge intÃ©rieur */
+color : white;  
+
+}
+
+.bouton_rouge:visited  {/*conservation de la couleur du teste meme apret avoir été visiter*/
+color : white;
+}
+.bouton_rouge:hover {/*pour que le txte s'afiche en vert au survolement*/
+color : white;
+}
+
+
+
+#centrer{
+text-align:center; /* Pour centrer l'image de l'index */
+}
+
+#presentation{
+font-size: 15px; /* Taille du texte */
+}
+
+.red{
+/* display: inline-block;  Evite le retour Ã  la ligne da la div */ 
+color: red; /* Applique une couleur rouge aux id="red" */
+}
+.green{
+/* display: inline-block; Evite le retour Ã  la ligne da la div */ 
+color: green; /* Applique une couleur verte aux id="red" */
+}
+
+
+/*-------------------------------------------------------
+ SPOILER
+--------------------------------------------------------*/
+#container #content {
+   height: 1px; /* hauteur de 1px */
+   overflow: hidden;/* cache tout ce qui dépasse*/
+   border: 1px solid silver;/* bordure de 1px en couleur silver */
+}
+
+#container:target #content {
+   height: auto;/* hauteur automatique*/
+}
+
+/* ci-dessous : pour cacher les liens. */
+#container:target #hide, #container #show {
+   display: inline;/*le bloc sera considéré comme étant un seule lign */
+}
+
+#container:target #show, #container #hide {
+   display: none; /* le bloc ne sera pas affiché*/
+}
+	
+.tableau {
+    border-radius: 5px; /*On arrondi les bords des tableaux*/
+}

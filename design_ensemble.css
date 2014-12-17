@@ -1,0 +1,43 @@
+/* 
+DESIGN GENERAL
+*/
+
+
+
+/*-------------------------------------------------------
+ Corps de la page
+--------------------------------------------------------*/
+body{
+width:100%; /* Le site prend 80% de largueur de la page de la page */
+font-family:Comic sans MS; /* Poloce d'�criture */
+font-size: 15px; /* Taille du texte */
+line-height: 1.4; /* Espace interligne minimun */
+
+}
+
+/*-------------------------------------------------------
+ disign des liens
+--------------------------------------------------------*/
+
+a:link 
+{ 
+ text-decoration:none; 
+} 
+
+a:visited /* Quand le visiteur a d�j� vu la page concern�e */
+{
+    color: blue; /* le texte reste de la m�me couleur m�me apert avoir �t� visit� */
+}
+
+a:hover /* Apparence au survol des liens */
+{
+   color: #333333; /* Apparence au survol des liens */
+}
+
+ol {
+list-style: none;
+line-height: 1.7;
+}
+strong{
+	font-weight:bold; /*met en gras */
+}

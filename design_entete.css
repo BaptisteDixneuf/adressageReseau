@@ -1,0 +1,142 @@
+/* 
+DESIGN DE L ENTETE
+*/
+
+/*-------------------------------------------------------
+ Entete contanant l'entete avec le logo et le titre
+--------------------------------------------------------*/
+
+header{ 
+width: 80%; /*Largeur de 80% de la page*/
+padding-left: 10%; /* Marge intérieur à gauche de 10% de la largueur de l'écran */
+padding-right: 10%; /* Marge intérieur à droite de 10% de la largueur de l'écran */
+background: url('header.jpg') repeat-x; /* Fond du header */
+}
+
+/*Titre du header */
+header h1{ 
+text-align:center; /* Le texte est centr� dans le bloc */
+font-size: 2.5em; /* Taille du texte*/
+color: #D6DFF7; /* Couleur du titre */
+text-shadow: 3px 5px 1px #919BAA; /* ombre */
+min-height:70px; /* Hauteur minimun du bloc */
+padding-top: 5px; /* Marge de 5px pour pas que le logo et le titre soit coll� en haut.*/
+}
+
+/* Image du header */
+header img{ /*Titre du header */
+float:left; /* L'image float � gauche */
+padding-left: 20px; /* Marge int�rieur de 20 ox � gauche pour pas que l'image soit coll� au bloc */
+
+}
+
+
+/* Bannière */
+
+#banniere_image img
+{
+    margin-top: 15px; /*Marge supérieur de 15px */
+    height: 200px; /*hauteur de 200px*/
+    border-radius: 10px; /*On arrondi les bords de 10px*/
+   
+    box-shadow: 5px 5px 5px #1C1A19; /*ombre*/
+     margin-bottom: 25px; /*marge du bas de 25px*/
+}
+
+
+/*-------------------------------------------------------
+ Menu déroulant
+--------------------------------------------------------*/
+.BarreMenu{
+background: rgba(0, 0, 0, 0.5); /* couleur de fond */
+height: 29px; /*Hauteur*/
+width:100%; /*Largeur de 100% de la page*/
+
+}
+nav{
+margin-left: auto; /* Calcul automatique de la marge à gauche */
+margin-right: auto; /* Calcul automatique de la marge à droite */
+width: 900px; /* largeur obligatoire pour être centré */	
+}
+
+
+/* Elements de premier niveau
+--------------------------------------*/
+#menu_horizontal
+{
+	height: 21px; /*Hauteur*/
+	list-style-type: none; /*Aucune décoration de liste */
+	margin: 0; /* Aucune marge extérieur */
+	padding: 0; /* Aucune marge intérieur */
+	border: 0; /*Aucune bordure */
+	position: absolute; /* L'élément est positione en relatif par rapport à son premier ancêtre élément */
+}
+#menu_horizontal li
+{
+	float: left; /* Le bloc flotte à gauche */
+	margin: 0; /* Aucune marge extérieur */
+	padding: 0; /* Aucune marge intérieur */
+	border: 0; /*Aucune bordure */
+}
+#menu_horizontal li a:link, #menu_horizontal li a:visited
+{
+	display: block;  /*le bloc  sera  affiché */
+	height: 1%; /*Hauteur de 1% */
+	color: #FFF; /*Couleur du texte */
+	margin: 0; /* Aucune marge extérieur */
+	padding: 4px 8px; /* pading de 4px en haut et 8px à droite */
+	border-right: 1px solid #fff; /* Bordure solide en couleur à droite de 1px */
+	text-decoration: none; /* Définit un texte normal sans décoration */
+}
+#menu_horizontal li a:hover { background-color: #F2462E; }
+#menu_horizontal li a:active { background-color: #5F879D; }
+
+#menu_horizontal .sousMenu
+{
+	display: none; /* le bloc ne sera pas affiché */
+	list-style-type: none; 
+	margin: 0; /* Aucune marge extérieur */
+	padding: 0;/* Aucune marge intérieur */
+	border: 0; /*Aucune bordure */
+	background-color: #3B4E77; /*Couleur de fond */
+}
+#menu_horizontal .sousMenu li
+{
+	float: none; /* Me menu ne float pas */
+	margin: 0; /* Aucune marge extérieur */
+	padding: 0;/* Aucune marge intérieur */
+	border: 0; /*Aucune bordure */
+	
+	border-top: 1px solid white; /* Bordure en haut de 1px en blanc */
+	border-right: 1px solid white; /* Bordure à doite de 1px en blanc */
+}
+#menu_horizontal .sousMenu li a:link, #menu_horizontal .sousMenu li a:visited
+{
+	display: block;  /*le bloc  sera  affiché */
+	color: #FFF; /*couleur du texte */
+	margin: 0; /* Aucune marge extérieur */
+	border: 0; /*Aucune bordure */
+	text-decoration: none; /* Définit un texte normal sans décoration */
+	
+}
+#menu_horizontal .sousMenu li a:hover
+{
+	background-image: none; /* Pas d'images de fond comme généré dans certain navigateur */
+	background-color: #F2462E; /*Couleur de fond */
+}
+
+#menu_horizontal li:hover > .sousMenu { display: block; } 
+/* Quand la souris survol un lien du menu principal, on change l'attribut pour afficher les sous-listes qui sont cachés */
+
+/* Date et heure
+--------------------------------------*/
+.date
+{	
+	background-color:#FCF9F0; /*Couleur de fond */
+}	
+
+#date_heure
+{
+	margin-left:40%; /* Marge à gauche de 40% de la largeur de page */
+}
+
